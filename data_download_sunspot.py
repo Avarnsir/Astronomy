@@ -7,7 +7,7 @@ if not os.path.exists(custom_directory):
     os.makedirs(custom_directory)
 
 # Query NOAA sunspot number dataset
-result = Fido.search(a.Time('1920-01-01', '2023-01-01'), a.Instrument('SOON'))
+result = Fido.search(a.Time('1920-01-01', '2023-01-01'), a.Instrument('SOON')) # well this data will give you data for over 100 years so adjust according to your own thing
 
 # Print results
 print(result)
